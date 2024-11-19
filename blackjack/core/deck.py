@@ -1,3 +1,5 @@
+import random
+
 from blackjack.core.card import Card
 
 
@@ -14,3 +16,6 @@ class Deck:
 
     def get_deck(self):
         return self.card_deck
+
+    def shuffle_deck(self):
+        random.shuffle(self.card_deck)
