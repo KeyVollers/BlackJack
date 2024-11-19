@@ -24,3 +24,8 @@ card_suit_map = {
 
 def print_card(card):
     print(card_value_map[card.get_value()], card_suit_map[card.get_suit()])
+
+
+def print_deck(deck):
+    for card in deck:
+        print_card(card)
